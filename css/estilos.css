@@ -1,0 +1,10 @@
+/* Alterando o Box model */
+* { box-sizing: border-box;}
+
+/* Reset de alguns elementos */
+body, h1, h2, p figure, .links.menu {
+    margin: 0;
+    padding: 0;
+}
+
+img { max-width: 100%;}
