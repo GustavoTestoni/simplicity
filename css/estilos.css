@@ -14,10 +14,12 @@
     --cor-intermediaria: #ececec;
 }
 
-
+/* Valor de referência/base
+para uso de medida REM */
+html { font-size: 16px;}
 
 /* Reset de alguns elementos */
-body, h1, h2, p figure, .links.menu {
+body, h1, h2, p, figure, .links-menu {
     margin: 0;
     padding: 0;
 }
@@ -36,4 +38,55 @@ a { text-decoration: none;}
     text-transform: uppercase;
     font-weight: 800; 
     font-size: 1.5rem;  
+}
+
+.titulo a {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-menu a {
+    color: var(--cor-escura);
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+
+}   
+
+.menu a:hover { 
+    background-color: var(--cor-intermediaria);
+}
+.links-menu { list-style-type: none;
+display: none;}
+
+.links-menu a { 
+    color: var(--cor-escura);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+.links-menu.aberto {
+    display: flex; /* Usamos o flex para fazer aparecer */
+    flex-direction: column; 
+    /* usamos o position absolute para
+    "soltar" a lista de links na tela
+    e com as propriedades/coordenadas
+    left e right ajustar sua posição
+    em relação as laterais */
+    position: absolute;
+    /*  */
+    left: 0;
+    right: 0;
+    background-color: var(--cor-clara);
 }
