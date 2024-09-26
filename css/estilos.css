@@ -78,7 +78,10 @@ display: none;}
 }
 .links-menu.aberto {
     display: flex; /* Usamos o flex para fazer aparecer */
+    
+    /* para alinhar verticalmente */
     flex-direction: column; 
+    
     /* usamos o position absolute para
     "soltar" a lista de links na tela
     e com as propriedades/coordenadas
@@ -89,4 +92,17 @@ display: none;}
     left: 0;
     right: 0;
     background-color: var(--cor-clara);
+}
+
+.destaque {
+    color:var(--cor-clara);
+    height: 75vh;
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 }
