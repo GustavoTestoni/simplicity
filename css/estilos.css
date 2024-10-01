@@ -2,11 +2,13 @@
 
 
 /* Alterando o Box model */
-* { box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 
 /* declaração de variáveis (sempre no :root */
-:root { 
+:root {
     --cor-titulo: #4d4d4d;
     --cor-texto: #333;
     --cor-escura: #000;
@@ -16,28 +18,39 @@
 
 /* Valor de referência/base
 para uso de medida REM */
-html { font-size: 16px;}
+html {
+    font-size: 16px;
+}
 
 /* Reset de alguns elementos */
-body, h1, h2, p, figure, .links-menu {
+body,
+h1,
+h2,
+p,
+figure,
+.links-menu {
     margin: 0;
     padding: 0;
 }
 
-img { max-width: 100%;}
+img {
+    max-width: 100%;
+}
 
 body {
-    font-family:"Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     color: var(--cor-texto)
 }
 
-a { text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 .titulo {
     font-family: "Haleway", sans-serif;
     text-transform: uppercase;
-    font-weight: 800; 
-    font-size: 1.5rem;  
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 
 .titulo a {
@@ -59,15 +72,18 @@ a { text-decoration: none;}
     padding: 1rem;
     display: inline-block;
 
-}   
+}
 
-.menu a:hover { 
+.menu a:hover {
     background-color: var(--cor-intermediaria);
 }
-.links-menu { list-style-type: none;
-display: none;}
 
-.links-menu a { 
+.links-menu {
+    list-style-type: none;
+    display: none;
+}
+
+.links-menu a {
     color: var(--cor-escura);
     font-weight: bold;
     display: flex;
@@ -76,12 +92,14 @@ display: none;}
     height: 50px;
 
 }
+
 .links-menu.aberto {
-    display: flex; /* Usamos o flex para fazer aparecer */
-    
+    display: flex;
+    /* Usamos o flex para fazer aparecer */
+
     /* para alinhar verticalmente */
-    flex-direction: column; 
-    
+    flex-direction: column;
+
     /* usamos o position absolute para
     "soltar" a lista de links na tela
     e com as propriedades/coordenadas
@@ -95,7 +113,7 @@ display: none;}
 }
 
 .destaque {
-    color:var(--cor-clara);
+    color: var(--cor-clara);
     height: 75vh;
     background-image: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
@@ -106,27 +124,41 @@ display: none;}
 }
 
 /* Etapa1: criar regra de animação */
-@keyframes animaDestaque { 
+@keyframes animaDestaque {
+
     /* De (como começa) */
-    from { 
+    from {
         opacity: 0;
         transform: translateY(-500px) scale(0.5);
-    } 
+    }
 
     /* Para (como termina) */
-    to { 
+    to {
         opacity: 1;
         transform: translateY();
     }
 }
+
 /* Etapa 2:  aplicar a animação */
-.destaque h2, .destaque p {
+.destaque h2,
+.destaque p {
     animation-name: animaDestaque;
     animation-duration: 2s;
 
-/* opções adicionais */
-/* animation-iteration-count */
-/* animation-direction: alternate */
+    /* opções adicionais */
+    /* animation-iteration-count */
+    /* animation-direction: alternate */
 
+}
 
+/*Função clamp()
+Usada para definir um valor que se ajusta dinamicamente
+entre um valor MINIMO, IDEAL/FEXIVEL/VARIAVEL e MAXIMO */
+
+.destaque h2 {
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+.destaque p {
+    font-size: clamp(1rem, 20vw, 3rem);
 }
