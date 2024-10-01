@@ -105,4 +105,28 @@ display: none;}
     justify-content: center;
 }
 
+/* Etapa1: criar regra de animação */
+@keyframes animaDestaque { 
+    /* De (como começa) */
+    from { 
+        opacity: 0;
+        transform: translateY(-500px) scale(0.5);
+    } 
+
+    /* Para (como termina) */
+    to { 
+        opacity: 1;
+        transform: translateY();
+    }
+}
+/* Etapa 2:  aplicar a animação */
+.destaque h2, .destaque p {
+    animation-name: animaDestaque;
+    animation-duration: 2s;
+
+/* opções adicionais */
+/* animation-iteration-count */
+/* animation-direction: alternate */
+
+
 }
