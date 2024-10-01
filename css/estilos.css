@@ -144,7 +144,7 @@ a {
 .destaque p {
     animation-name: animaDestaque;
     animation-duration: 2s;
-
+    color: var(--cor-clara);
     /* opções adicionais */
     /* animation-iteration-count */
     /* animation-direction: alternate */
@@ -161,4 +161,26 @@ entre um valor MINIMO, IDEAL/FEXIVEL/VARIAVEL e MAXIMO */
 
 .destaque p {
     font-size: clamp(1rem, 20vw, 3rem);
+}
+
+article h2 { 
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: Raleway, sans-serif;
+    color: var(--cor-titulo);
+
+}
+
+article p { 
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    
+}
+
+article address {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.front-end, .historia, .localizacao {
+    text-align: center;
 }
