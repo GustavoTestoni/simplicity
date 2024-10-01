@@ -219,6 +219,19 @@ article address {
     justify-content: center;
     text-align: center;
 
-
-
 }
+
+
+/* Regras para as demais páginas (produtos, serviços e contato */
+
+.conteudo-geral {
+    background-color: var(--cor-intermediaria);
+    padding: 0.5rem;
+}
+
+.conteudo-geral h2 { 
+    padding: 0;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+}
+
