@@ -78,11 +78,11 @@ aplicamos os ajustes de layout (flex) */
     align-items: center;
 }
 
-/* Classe que srá aplicada
+/* Classe que será aplicada
 em algumas partes do site
 visando criar limites de tamanho */
 .limitador {
-    width: 95vh;
+    width: 95vw;
     max-width: 1000px;
     margin: auto;
 
@@ -307,4 +307,17 @@ odd (ímpares) */
 
 tr:nth-child(even) {
     background-color: var(--cor-clara);
+}
+.galeria img:hover {
+    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    transform: scale(1.2);
+}
+.galeria img { 
+    border-radius: 50%;
+    border: 2px;
+    border-color: bisque;
 }
