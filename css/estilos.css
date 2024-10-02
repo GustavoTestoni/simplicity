@@ -47,7 +47,7 @@ a {
 }
 
 .titulo {
-    font-family: "Haleway", sans-serif;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 1.5rem;
@@ -62,7 +62,7 @@ a {
 
 .topo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -169,7 +169,7 @@ entre um valor MINIMO, IDEAL/FEXIVEL/VARIAVEL e MAXIMO */
 article h2 {
     padding: 1rem;
     font-size: 1.4rem;
-    font-family: "Haleway", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: var(--cor-titulo);
 
 }
@@ -288,4 +288,13 @@ odd (ímpares) */
 
 tr:nth-child(even) {
     background-color: var(--cor-clara);
+}
+
+/* Classe que srá aplicada
+em algumas partes do site
+visando criar limites de tamanho */
+.limitador {
+    width: 95vh;
+    max-width: 1000px;
+    margin: auto;
 }
