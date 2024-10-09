@@ -363,3 +363,41 @@ html { font-size: 20px;}
 .topo .limitador { height: 100px;}
 
 }
+/* regras para formulário de contato */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-texto)
+}
+
+form div { margin-bottom: 1rem;}
+
+input, select, textarea { 
+    width: 100%;
+    border: none;
+    padding: 6px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+textarea { height: auto;}
+
+button { 
+    border: none;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+
+}
+
+button:hover, button:focus {
+    background-color: darkblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
