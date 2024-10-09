@@ -67,6 +67,7 @@ a {
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    z-index: 10;
 }
 
 
@@ -313,11 +314,11 @@ tr:nth-child(even) {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+    transition-duration: 0.5s;
     transform: scale(1.2);
 }
 .galeria img { 
     border-radius: 50%;
-    border: 2px;
-    border-color: bisque;
+    border:solid 6px;
+    border-color: rgb(230, 136, 23);
 }
