@@ -309,16 +309,57 @@ odd (ímpares) */
 tr:nth-child(even) {
     background-color: var(--cor-clara);
 }
+
 .galeria img:hover {
-    
+
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     transition-duration: 0.5s;
     transform: scale(1.2);
 }
-.galeria img { 
+
+.galeria img {
     border-radius: 50%;
-    border:solid 6px;
+    border: solid 6px;
     border-color: rgb(230, 136, 23);
+}
+
+/* Escondendo a palavra menu */
+@media screen and (min-width: 600px) {
+    .titulo-menu {
+        display: none;
+    }
+
+
+    /* Exibindo os links do menu */
+    .links-menu {
+        display: flex;
+    }
+
+    /* Ajustando o tamanho do menu(nav) fazendo-o "esticar",
+aumentando o espaçamento edentro dele */
+    .menu {
+        width: 60%;
+    }
+
+    /* Forçamos cada item (li) da lista a ter largura total e,
+com isso, redistribuir e ocupar todos os espaços dentro do
+menu */
+    .links-menu li {
+        width: 100%;
+    }
+}
+
+
+@media screen and(min-width:1000px) {
+     html { font-size: 20px ;}
+
+/* Aumentamos o tamanho da base do font-size.
+Desta forma, todos os textos do site(em especial os que usam REM)
+mudam de tamanho proporcionalmente */
+html { font-size: 20px;}
+
+.topo .limitador { height: 100px;}
+
 }
