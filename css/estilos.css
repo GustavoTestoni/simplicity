@@ -324,7 +324,19 @@ tr:nth-child(even) {
     border: solid 6px;
     border-color: rgb(230, 136, 23);
 }
+#area-do-cep {
+    display: flex;
+    justify-content: space-between;
+}
 
+#cep { width: 50%; }
+
+#buscar { 
+    width: 49%;
+    padding: 12px;
+}
+
+.campos-restantes { display: none; }
 /* Escondendo a palavra menu */
 @media screen and (min-width: 600px) {
     .titulo-menu {
